@@ -1,4 +1,4 @@
-# DeepSent (2025): *Nasdaq-100 Social Sentiment Analysis Intelligence*
+# DeepSent: *Nasdaq-100 Social Sentiment Analysis Intelligence*
 ### Streamlit App: https://nasdaq100-social-sentiment-analysis-report.streamlit.app/
 ---
 - **Authors**: *Minyoung Woo, Lechuan Wang, Xuantao Yuan, Yijie Wang*
