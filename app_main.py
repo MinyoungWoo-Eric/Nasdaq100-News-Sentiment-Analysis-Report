@@ -34,7 +34,7 @@ st.set_page_config(
 
 st.markdown("# DeepSent")  #Nasdaq-100 Social Sentiment Analysis Intelligence
 st.markdown('#### *Nasdaq-100 Social Sentiment Analysis Intelligence*')
-st.caption("Authors: Lechuan WANG, Minyoung WOO, Xuantao YUAN, Yijie WANG. (2025)")
+st.caption("Authors: Minyoung WOO, Lechuan WANG, Xuantao YUAN, Yijie WANG.")
 st.markdown("---")
 
 if 'selected_period' not in st.session_state:
