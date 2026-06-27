@@ -1,5 +1,5 @@
 # DeepSent: *Nasdaq-100 Social Sentiment Analysis Intelligence*
-### Streamlit App: https://nasdaq100-social-sentiment-analysis-report.streamlit.app/
+### Streamlit App: https://nasdaq100-news-sentiment-analysis-report.streamlit.app/
 ---
 - **Authors**: *Minyoung Woo, Lechuan Wang, Xuantao Yuan, Yijie Wang*
 - **Institution**: The Hong Kong University of Science and Technology, MSc in Business Analytics
