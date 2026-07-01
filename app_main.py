@@ -35,7 +35,7 @@ st.set_page_config(
 # ======================== Sidebar: About & Guide ========================
 with st.sidebar:
     st.markdown("## DeepSent")
-    st.caption("Nasdaq-100 Social Sentiment Analysis Intelligence")
+    st.caption("Nasdaq-100 News Sentiment Analysis Intelligence")
     st.divider()
 
     # ---- Objective ----
@@ -80,7 +80,7 @@ with st.sidebar:
     st.caption("Data: Alpha Vantage · Azure GPT-4o · yfinance")
 
 st.markdown("# DeepSent")  #Nasdaq-100 Social Sentiment Analysis Intelligence
-st.markdown('#### *Nasdaq-100 Social Sentiment Analysis Intelligence*')
+st.markdown('#### *Nasdaq-100 News Sentiment Analysis Intelligence*')
 st.caption("Authors: Minyoung WOO, Lechuan WANG, Xuantao YUAN, Yijie WANG.")
 st.markdown("---")
 
