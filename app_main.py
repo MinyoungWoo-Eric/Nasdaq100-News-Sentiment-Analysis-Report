@@ -98,7 +98,7 @@ selected_ticker = st.selectbox(
     options=STOCK_TICKERS,
     index=STOCK_TICKERS.index("NVDA") if "NVDA" in STOCK_TICKERS else 0,
     format_func=lambda x: f"{x}",
-    help="Type ticker (e.g. NVDA/AAPL/TSLA)",
+    help="Type ticker (e.g., NVDA/AAPL/TSLA) or select ticker in the dropdown",
     key="ticker_selectbox"
 )
 
