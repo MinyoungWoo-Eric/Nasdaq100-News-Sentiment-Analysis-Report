@@ -82,7 +82,6 @@ with st.sidebar:
 
 st.markdown("# DeepSent")  #Nasdaq-100 Social Sentiment Analysis Intelligence
 st.markdown('#### *Nasdaq-100 News Sentiment Analysis Intelligence*')
-st.caption("Authors: Minyoung WOO, Lechuan WANG, Xuantao YUAN, Yijie WANG.")
 st.markdown("---")
 
 if 'selected_period' not in st.session_state:
