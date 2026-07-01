@@ -67,8 +67,8 @@ with st.sidebar:
     # ---- What this tool provides ----
     with st.expander("What This Tool Provides", expanded=True):
         st.markdown(
-            "- **Price action** — interactive K-line and volume charts\n"
-            "- **Fundamentals & technicals** — RSI, ATR, ROE, P/E, P/B, P/S…\n"
+            "- `Price action` — interactive K-line and volume charts\n"
+            "- `Fundamentals & technicals` — RSI, ATR, ROE, P/E, P/B, P/S…\n"
             "- **Sentiment visuals** — trend line over time and daily "
             "distribution boxplot\n"
             "- **AI sentiment report** — institutional RAG analysis with cited "
