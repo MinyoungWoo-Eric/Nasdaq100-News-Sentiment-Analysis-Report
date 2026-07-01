@@ -315,4 +315,4 @@ if generate_btn or cache_key in st.session_state:
 # ======================= Footer =========================
 st.markdown("---")
 st.caption("Powered by Alpha Vantage • Azure GPT-4o • yfinance • Streamlit | © 2025 DeepSent • Nasdaq-100 News Sentiment Analysis Intelligence")
-st.caption("© Team of Minyoung WOO, Lechuan WANG, Xuantao YUAN, Yijie WANG. (2025). All rights reserved")
+st.caption("© Author: Minyoung Woo, Lechuan Wang, Xuantao Yuan, Yijie Wang (2025). All rights reserved")
