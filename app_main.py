@@ -26,11 +26,58 @@ except ImportError:
 
 # ======================== Page Configuration ========================
 st.set_page_config(
-    page_title="Nasdaq-100 Sentiment Intelligence",
+    page_title="Nasdaq-100 News Sentiment Intelligence",
     page_icon="Chart Increasing",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="expanded"
 )
+
+# ======================== Sidebar: About & Guide ========================
+with st.sidebar:
+    st.markdown("## DeepSent")
+    st.caption("Nasdaq-100 Social Sentiment Analysis Intelligence")
+    st.divider()
+
+    # ---- Objective ----
+    st.markdown("### Objective")
+    st.markdown(
+        "**DeepSent** is an institutional-grade social-sentiment "
+        "intelligence system for **Nasdaq-100** stocks. It converts raw "
+        "financial news into transparent, decision-ready sentiment signals "
+        "by pairing real-time market data with a Retrieval-Augmented "
+        "Generation (RAG) analyst powered by **GPT-4o**."
+    )
+
+    # ---- How to use ----
+    with st.expander("How to Use", expanded=True):
+        st.markdown(
+            "1. **Select** a Nasdaq-100 ticker (e.g. `NVDA`, `AAPL`, `TSLA`).\n"
+            "2. **Review** the fundamentals, K-line and technical indicators "
+            "for your chosen time period.\n"
+            "3. **Configure** the sentiment agent — choose *how many articles "
+            "per day* to analyze and the *start / end date* window.\n"
+            "4. **Generate** the report to run the RAG analysis."
+        )
+        st.caption(
+            "Example: scan up to **30 articles/day** across the **last 7 days** "
+            "for your selected ticker."
+        )
+
+    # ---- What this tool provides ----
+    with st.expander("What This Tool Provides", expanded=True):
+        st.markdown(
+            "- **Price action** — interactive K-line and volume charts\n"
+            "- **Fundamentals & technicals** — RSI, ATR, ROE, P/E, P/B, P/S…\n"
+            "- **AI sentiment report** — institutional RAG analysis with cited "
+            "news sources\n"
+            "- **Sentiment visuals** — trend line over time and daily "
+            "distribution boxplot\n"
+            "- **Overall sentiment score** — single-glance market mood\n"
+            "- **Export** — download the full report as Markdown"
+        )
+
+    st.divider()
+    st.caption("Data: Alpha Vantage · Azure GPT-4o · yfinance")
 
 st.markdown("# DeepSent")  #Nasdaq-100 Social Sentiment Analysis Intelligence
 st.markdown('#### *Nasdaq-100 Social Sentiment Analysis Intelligence*')
@@ -262,5 +309,5 @@ if generate_btn or cache_key in st.session_state:
 
 # ======================= Footer =========================
 st.markdown("---")
-st.caption("Powered by Alpha Vantage • Azure GPT-4o • yfinance • Streamlit | © 2025 DeepSent • Nasdaq-100 Sentiment Analysis Intelligence")
-st.caption("© Team of Lechuan WANG, Minyoung WOO, Xuantao YUAN, Yijie WANG. (2025). All rights reserved")
+st.caption("Powered by Alpha Vantage • Azure GPT-4o • yfinance • Streamlit | © 2025 DeepSent • Nasdaq-100 News Sentiment Analysis Intelligence")
+st.caption("© Team of Minyoung WOO, Lechuan WANG, Xuantao YUAN, Yijie WANG. (2025). All rights reserved")
