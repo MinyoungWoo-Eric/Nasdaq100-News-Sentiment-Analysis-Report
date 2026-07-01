@@ -36,6 +36,7 @@ st.set_page_config(
 with st.sidebar:
     st.markdown("## DeepSent")
     st.caption("Nasdaq-100 News Sentiment Analysis Intelligence")
+    st.caption("Author: Minyoung WOO, Lechuan WANG, Xuantao YUAN, Yijie WANG")
     st.divider()
 
     # ---- Objective ----
