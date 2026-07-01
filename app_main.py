@@ -69,17 +69,17 @@ with st.sidebar:
         st.markdown(
             "- `Price action` — interactive K-line and volume charts\n"
             "- `Fundamentals & technicals` — RSI, ATR, ROE, P/E, P/B, P/S…\n"
-            "- **Sentiment visuals** — trend line over time and daily "
+            "- `Sentiment visuals` — trend line over time and daily "
             "distribution boxplot\n"
-            "- **AI sentiment report** — institutional RAG analysis with cited "
+            "- `AI sentiment report` — institutional RAG analysis with cited "
             "news sources:\n"
             "    - Sentiment Snapshot\n"
             "    - Sentiment Anomaly Drivers\n"
             "    - Bull vs Bearish Narrative Dominance\n"
             "    - Short-Term Price Implication\n"
             "    - Appendix: Daily Event Timeline\n"
-            "- **Overall sentiment score** — single-glance market mood\n"
-            "- **Export** — download the full report as Markdown"
+            "- `Overall sentiment score` — single-glance market mood\n"
+            "- `Export` — download the full report as Markdown"
         )
 
     st.divider()
