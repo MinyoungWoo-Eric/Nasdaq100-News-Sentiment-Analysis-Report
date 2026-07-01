@@ -42,9 +42,9 @@ with st.sidebar:
     # ---- Objective ----
     st.markdown("### Objective")
     st.markdown(
-        "**DeepSent** is an institutional-grade social-sentiment "
+        "**DeepSent** is an institutional-grade news-sentiment "
         "intelligence system for **Nasdaq-100** stocks. It converts raw "
-        "financial news into transparent, decision-ready sentiment signals "
+        "financial news into transparent, decision-support sentiment signals "
         "by pairing real-time market data with a Retrieval-Augmented "
         "Generation (RAG) analyst powered by **GPT-4o**."
     )
@@ -53,7 +53,7 @@ with st.sidebar:
     with st.expander("How to Use", expanded=True):
         st.markdown(
             "1. **Select** a Nasdaq-100 ticker (e.g. `NVDA`, `AAPL`, `TSLA`).\n"
-            "2. **Review** the fundamentals, K-line and technical indicators "
+            "2. **Review** the core fundamentals, K-line and technical indicators "
             "for your chosen time period.\n"
             "3. **Configure** the sentiment agent — choose *how many articles "
             "per day* to analyze and the *start / end date* window.\n"
