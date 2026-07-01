@@ -167,7 +167,7 @@ with col1:
         "Max articles per day",
         options=[10, 20, 30, 50, 100],
         index=2,
-        help="Recommended 30"
+        help="Maximum number of articles/day to analyze"
     )
 
 with col2:
