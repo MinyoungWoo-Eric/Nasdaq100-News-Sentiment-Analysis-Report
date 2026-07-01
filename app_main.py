@@ -53,7 +53,7 @@ with st.sidebar:
     with st.expander("How to Use", expanded=True):
         st.markdown(
             "1. **Select** a Nasdaq-100 ticker (e.g. `NVDA`, `AAPL`, `TSLA`).\n"
-            "2. **Review** the core fundamentals, K-line and technical indicators "
+            "2. **Review** the core fundamentals, K-line and stock financial indicators "
             "for your chosen time period.\n"
             "3. **Configure** the sentiment agent — choose *how many articles "
             "per day* to analyze and the *start / end date* window.\n"
@@ -69,10 +69,15 @@ with st.sidebar:
         st.markdown(
             "- **Price action** — interactive K-line and volume charts\n"
             "- **Fundamentals & technicals** — RSI, ATR, ROE, P/E, P/B, P/S…\n"
-            "- **AI sentiment report** — institutional RAG analysis with cited "
-            "news sources\n"
             "- **Sentiment visuals** — trend line over time and daily "
             "distribution boxplot\n"
+            "- **AI sentiment report** — institutional RAG analysis with cited "
+            "news sources\n"
+                "(a) Sentiment Snaptshot\n"
+                "(b) Sentiment Anomaly Drivers\n"
+                "(c) Bull vs Bearish Narrative Dominance\n"
+                "(d) Short-Term Price Implication\n"
+                "(e) Appendix: Daily Event Timeline\n"
             "- **Overall sentiment score** — single-glance market mood\n"
             "- **Export** — download the full report as Markdown"
         )
