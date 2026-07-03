@@ -46,7 +46,7 @@ with st.sidebar:
         "intelligence system for **Nasdaq-100** stocks. It converts raw "
         "financial news into transparent, decision-support sentiment signals "
         "by pairing real-time market data with a Retrieval-Augmented "
-        "Generation(RAG) analysis powered by GPT-4o."
+        "Generation (RAG) analysis powered by GPT-4o."
     )
 
     # ---- How to use ----
