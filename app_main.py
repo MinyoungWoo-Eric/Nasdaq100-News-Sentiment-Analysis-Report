@@ -46,7 +46,7 @@ with st.sidebar:
         "intelligence system for **Nasdaq-100** stocks. It converts raw "
         "financial news into transparent, decision-support sentiment signals "
         "by pairing real-time market data with a Retrieval-Augmented "
-        "Generation (RAG) analyst powered by **GPT-4o**."
+        "Generation (RAG) analysis powered by **GPT-4o**."
     )
 
     # ---- How to use ----
@@ -60,25 +60,25 @@ with st.sidebar:
             "4. **Generate** the report to run the RAG analysis."
         )
         st.caption(
-            "Example: scan up to **30 articles/day** across the **last 7 days** "
+            "Example: Scan up to **30 articles/day** across the **last 7 days** "
             "for your selected ticker."
         )
 
     # ---- What this tool provides ----
     with st.expander("What This Tool Provides", expanded=True):
         st.markdown(
-            "- **`Price action`** — interactive K-line and volume charts\n"
-            "- **`Fundamentals & technicals`** — RSI, ATR, ROE, P/E, P/B, P/S…\n"
-            "- **`Sentiment visuals`** — trend line over time and daily "
+            "- **`Price Action`** — interactive K-line and volume charts\n"
+            "- **`Fundamentals & Technicals`** — RSI, ATR, ROE, P/E, P/B, P/S, etc\n"
+            "- **`Sentiment Visuals`** — trend line over time and daily "
             "distribution boxplot\n"
-            "- **`AI sentiment report`** — institutional RAG analysis with cited "
+            "- **`AI Sentiment Report`** — institutional RAG analysis with cited "
             "news sources:\n"
             "    - Sentiment Snapshot\n"
             "    - Sentiment Anomaly Drivers\n"
             "    - Bull vs Bearish Narrative Dominance\n"
             "    - Short-Term Price Implication\n"
             "    - Appendix: Daily Event Timeline\n"
-            "- **`Overall sentiment score`** — single-glance market mood\n"
+            "- **`Overall Sentiment Score`** — single-glance market mood\n"
             "- **`Export`** — download the full report as Markdown"
         )
 
@@ -105,7 +105,6 @@ selected_ticker = st.selectbox(
 # ======================== Main Content Area: Ultimate Professional Layout ========================
 st.subheader(f"{selected_ticker} — Core Fundamentals")
 
-# 时间周期选择
 col_period = st.columns([1, 6])[0]
 with col_period:
     selected_period = st.selectbox(
@@ -131,7 +130,6 @@ else:
 # ======================== Part Three: All Core Indicators Arranged Horizontally (below the chart) ========================
 st.markdown("#### Core Trading Indicators")
 
-# 创建 5 列布局（可容纳所有指标）
 c1, c2, c3, c4, c5 = st.columns(5)
 
 with c1:
@@ -220,7 +218,7 @@ if generate_btn or cache_key in st.session_state:
             end_date=end_date.strftime("%Y-%m-%d")
         )
 
-        status.text("Step 2: Generating institutional RAG report with GPT-4o...")
+        status.text("Step 2: Generating institutional report with GPT-4o...")
         prog.progress(60)
 
         report = generate_report_sections(
